@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.skills-title {
+  position: relative;
+  font-family: "Urbanist", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  z-index: 0;
+}
+
+.skills-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  z-index: 0;
+}
+
+.certificate {
+  height:300px;
+
+  width: 300px;
+  max-width: 90vw;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.certificate:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+/* ========== MOBILE ========== */
+@media screen and (max-width: 768px) {
+  .skills-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .skills-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .certificate {
+    width: 90vw;
+    max-width: 95vw;
+  }
+}

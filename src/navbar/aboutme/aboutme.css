@@ -1,0 +1,96 @@
+/* AboutMe.css */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.aboutme-section {
+  font-family: "Urbanist", sans-serif;
+  min-height: 100vh;
+  background-color: #00000000;
+  padding: 50px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.aboutme-link {
+  position: fixed;
+  top: 1vh;
+  left: 5vw;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.aboutme-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.aboutme-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.aboutme-right {
+  flex-shrink: 0;
+  max-width: 320px;
+  width: 100%;
+}
+
+.aboutme-left .text {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.aboutme-left .split-text h1 {
+  font-family: "Urbanist", sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 1.3;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.scroll-message {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  opacity: 0.7;
+  font-family: 'Urbanist', sans-serif;
+  z-index: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutme-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .aboutme-left .text {
+    font-size: 2rem;
+  }
+
+  .aboutme-left .split-text h1 {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .aboutme-right {
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+}

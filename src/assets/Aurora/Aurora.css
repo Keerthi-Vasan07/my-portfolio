@@ -1,0 +1,12 @@
+.aurora-container {
+  position: fixed; /* Or absolute if you only want it inside a relative parent */
+  top: 50px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  border-radius: 50px;
+  margin: 0;
+  padding: 0;
+  z-index: 0; /* Use 0 instead of -1 to keep it behind UI but not under body */
+  pointer-events: none; /* Ensure it doesn’t block buttons or links */
+}
